@@ -11,7 +11,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 93%;
-  /* background-color: black; */
 }
 
 .intro-container {
@@ -22,7 +21,6 @@ body {
   width: 70%;
   height: 60%;
   margin: 0 auto;
-  /* box-shadow: 5px 2px 20px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .header-container {
@@ -112,10 +110,11 @@ h1 {
   justify-content: space-between;
   width: 70%;
   height: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
-.info-container p {
+.info-container .personal-text-container p {
   display: inline-block;
   width: max-content;
   max-width: 80%;
@@ -133,6 +132,7 @@ h1 {
 
 .personal-container {
   display: flex;
+  align-content: center;
 }
 
 .personal-text-container {
@@ -146,4 +146,32 @@ h1 {
   height: 300px;
   width: 300px;
   margin-right: .3em;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 700px;
+  margin: 0 1em 0 1em;
+}
+
+.project-image {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 1em;
+}
+
+.project-description {
+  width: 300px;
+  max-height: 200px;
+  color: #636363;
+  text-align: left;
 }
