@@ -16,3 +16,15 @@ Streetwear
 Things to Show:
 Contact/Social Media
 Projects
+- eBay
+- Hamono
+- FocoUnlocked
+- Pulse
+- Seabird
+
+
+Tech Stack
+React
+Node.js
+Mongoose
+MongoDB

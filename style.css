@@ -87,6 +87,14 @@ h1 {
   background-color: black;
 }
 
+h3 {
+  display: inline-table;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  padding: .1em 1em .1em 1em;
+  margin: 0 auto;
+}
+
 .contact-container {
   width: 50%;
   font-size: 1em;
@@ -169,7 +177,7 @@ h1 {
   flex-direction: column;
   width: 300px;
   max-height: 700px;
-  margin: 0 1em 0 1em;
+  margin: 1em 6em 3em 6em;
 }
 
 .project-image {
