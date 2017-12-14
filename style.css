@@ -133,7 +133,6 @@ h3 {
   max-width: 80%;
   color: #636363;
   background-color: white;
-  text-align: left;
   margin: 0 0 1.2em 0;
 }
 
@@ -149,13 +148,27 @@ h3 {
 
 .personal-container {
   display: flex;
+  flex-direction: column;
   align-content: center;
+  flex-wrap: wrap;  
+  margin-top: 7em;
+}
+
+.personal-container div {
+  display: block;
 }
 
 .personal-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
+  width: 60%;
+}
+
+.profile-image-container {
+  display: flex;
+  width: 40%;
 }
 
 .profile-image {
