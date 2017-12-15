@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Roboto+Mono:300,400');
+body {
+  font-family: 'Roboto Mono', 'Karla', sans-serif;
+  background-color: #60D6D5;
+}
+
+::selection {
+  background: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:600px) {
+  .main-container {
+    height: 180%;
+  }
+
+  .main-container .info-container {
+    width: 100%;
+  }
+
+  .intro-container {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-container h1 {
+    font-size: 3.5em;
+  }
+
+  .intro-container .contact-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro-container .identify-container {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .intro-container .identify-container ul {
+    margin-top: -15em;
+    padding: 0;
+  }
+
+  .personal-container .personal-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+  }
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+  height: 7%;
+  flex-direction: row;
+  align-self: flex-end;
+  text-align: right;
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: .2em 1em .2em 1em;
+  margin-right: 2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #545454;
+}
+
+.left-container {
+  padding: 1.3em;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 4.5em;
+  color: #fff;
+  margin: 0;
+  margin-top: .05em;
+  padding: 0 .3em 0 .1em;
+  background-color: black;
+}
+
+h3 {
+  display: inline-table;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  padding: .1em 1em .1em 1em;
+  margin: 0 auto;
+}
+
+.contact-container {
+  width: 50%;
+  font-size: 1em;
+  text-align: left;
+  margin-top: .5em;
+}
+
+.contact-icon {
+  margin-right: .6em;
+}
+
+.identify-container {
+  display: flex;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.half-container {
+  width: 50%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about-info {
+  width: 80%;
+  justify-content: flex-start;
+}
+
+.info-container .personal-text-container p {
+  display: inline-block;
+  width: max-content;
+  max-width: 100%;
+  color: #636363;
+  background-color: white;
+  margin: 0 0 1.2em 0;
+}
+
+.info-container .personal-text-container p::selection {
+  background: black;
+}
+
+.info-container div h1 {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.personal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.personal-container div {
+  display: flex;
+}
+
+.personal-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-left: 50px;
+  width: 47%;
+}
+
+.profile-image-container {
+  display: flex;
+  width: 330px;
+  height: 330px;
+  margin: 0 1em 3em 1.7em;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  margin-right: .3em;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 700px;
+  margin: 1em 6em 3em 6em;
+}
+
+.project-image {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 1em;
+}
+
+.project-description {
+  width: 300px;
+  max-height: 200px;
+  color: #636363;
+  text-align: left;
+}
