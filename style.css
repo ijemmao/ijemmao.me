@@ -15,50 +15,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-}
-
-@media (max-width:600px) {
-  .main-container {
-    height: 180%;
-  }
-
-  .main-container .info-container {
-    width: 100%;
-  }
-
-  .intro-container {
-    align-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .intro-container h1 {
-    font-size: 3.5em;
-  }
-
-  .intro-container .contact-container {
-    width: 100%;
-    text-align: center;
-  }
-
-  .intro-container .identify-container {
-    text-align: center;
-    font-size: 1em;
-  }
-
-  .intro-container .identify-container ul {
-    margin-top: -15em;
-    padding: 0;
-  }
-
-  .personal-container .personal-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin-left: 50px;
-    width: 100%;
-  }
+  min-height: 700px;
 }
 
 .intro-container {
@@ -69,6 +26,14 @@ body {
   width: 70%;
   height: 60%;
   margin: 0 auto;
+}
+
+h3 a {
+  color: inherit;
+}
+
+h3 a:hover {
+  color: inherit;
 }
 
 .header-container {
@@ -109,7 +74,7 @@ ul li a {
 }
 
 a {
-  color: black;
+  color: #FFA922;
   text-decoration: none;
 }
 
@@ -150,12 +115,8 @@ h3 {
 
 .contact-icon {
   margin-right: .6em;
-}
-
-.identify-container {
-  display: flex;
-  align-self: center;
-  font-size: 1.5em;
+  height: 17px;
+  width: 17px;
 }
 
 .half-container {
@@ -185,6 +146,7 @@ h3 {
   color: #636363;
   background-color: white;
   margin: 0 0 1.2em 0;
+  padding-left: 5px;
 }
 
 .info-container .personal-text-container p::selection {
@@ -257,6 +219,36 @@ h3 {
 .project-description {
   width: 300px;
   max-height: 200px;
-  color: #636363;
+  color: #252525;
   text-align: left;
+}
+
+
+@media (max-width:600px) {
+  .main-container {
+    height: 180%;
+  }
+  .main-container .info-container {
+    width: 100%;
+  }
+  .intro-container {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .intro-container h1 {
+    font-size: 3.5em;
+  }
+  .intro-container .contact-container {
+    width: 100%;
+    text-align: center;
+  }
+  .personal-container .personal-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+  }
 }
