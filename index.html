@@ -8,9 +8,9 @@
     <div class="header-container">
       <nav>
         <ul>
-          <li><a href="#home">Home</a> / </li>
-          <li><a href="#about">About</a> / </li>
-          <li><a href="#projects">Projects</a></li>
+          <li id="home-nav-button"><a href="#home">Home</a> / </li>
+          <li id="about-nav-button"><a href="#about">About</a> / </li>
+          <li id="projects-nav-button"><a href="#projects">Projects</a></li>
         </ul>
       </nav>
     </div>
@@ -47,11 +47,11 @@
             <img class="profile-image" src="./assets/ebay_smug.png"/>
           </div>
           <div class="personal-text-container">
-            <p>Hey! I'm Ijemma Onwuzulike, a junior at <br />Dartmouth College.</p>
-            <p>Currently, I'm studying Computer Science and Japanese because I find <br />these fields to be challenging but super fascinating.</p>
-            <p>I love working in teams and discovering new tools and technologies.<br />Learning new skills to create fun and interactive applications<br /> is extremely exciting.</p>
-            <p>For my free time, I'm either watching some anime<br />or listening to some quality albums.<br />If I don't feel like doing that, you'll find <br />me grabbing meals with friends.</p>
-            <p>Feel free to look around the site, and even contact me!</p>
+            <p class="personal-text-section" >Hey! I'm Ijemma Onwuzulike, a junior at Dartmouth College.</p>
+            <p class="personal-text-section" >Currently, I'm studying Computer Science and Japanese because I find these fields to be challenging but super fascinating.</p>
+            <p class="personal-text-section" >I love working in teams and discovering new tools and technologies. Learning new skills to create fun and interactive applications is extremely exciting.</p>
+            <p class="personal-text-section" >For my free time, I'm either watching some anime or listening to some quality albums. If I don't feel like doing that, you'll find me grabbing meals with friends.</p>
+            <p class="personal-text-section" >Feel free to look around the site, and even contact me!</p>
           </div>
         </div>
       </div>
@@ -64,26 +64,27 @@
         <div class="projects-container">
           <div class="project">
             <div class="project-image" style="background-image: url('./assets/ebay.png'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
-            <h3>Front-End Web Developer</h3>
+            <h3 class="project-header">Front-End Web Developer</h3>
             <p class="project-description">At <a href="https://ebay.com/">eBay</a>, I had the opportunity to flex my front-end development skills by making a user-friendly widget that makes it easier for sellers to find promotions on the site.</p>
           </div>
           <div class="project">
             <div class="project-image" style="background-image: url('./assets/pulse.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
-            <h3>Full Stack Web Dev</h3>
+            <h3 class="project-header">Full Stack Web Dev</h3>
             <p class="project-description"><a href="https://dartmouth.collegepulse.com/">Pulse</a> is all about taking surveys on college campuses. On this team, I've worked on many tasks concerning both the front and backend.</p>
           </div>
           <div class="project">
             <div class="project-image" style="background-image: url('./assets/dali.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
-            <h3>Full Stack Web Dev</h3>
+            <h3 class="project-header">Full Stack Web Dev</h3>
             <p class="project-description">On my campus, I work at an organization named the <a href="http://dali.dartmouth.edu/">DALI Lab</a>. In the lab I have the opportunity to create mobile and web applications with other developers and designers.</p>
           </div>
           <div class="project">
             <img class="project-image" src="./assets/green.png" />
-            <h3>Game Developer</h3>
+            <h3 class="project-header">Game Developer</h3>
             <p class="project-description">During one winter break, a couple of my friends and I decided to make a game using Unity. Being my first time making a <a href="#">desktop game</a>, I had the opportunity to learn about game design, mechanics, and more through C#.</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

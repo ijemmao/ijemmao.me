@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Karla|Roboto+Mono:300,400');
 body {
   font-family: 'Roboto Mono', 'Karla', sans-serif;
-  background-color: #2299ff;
+  margin: 0;
 }
 
 ::selection {
@@ -19,12 +19,7 @@ body {
 }
 
 .intro-container {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: space-between;
   width: 70%;
-  height: 60%;
   margin: 0 auto;
 }
 
@@ -33,13 +28,12 @@ h3 a {
 }
 
 h3 a:hover {
-  color: inherit;
+  color: #FFA922;
 }
 
 .header-container {
   display: flex;
   width: 100%;
-  height: 7%;
   flex-direction: row;
   align-self: flex-end;
   text-align: right;
@@ -79,7 +73,7 @@ a {
 }
 
 a:hover {
-  color: #545454;
+  color: #FFA922;
   transition: all .2s;
 }
 
@@ -101,9 +95,13 @@ h1 {
 h3 {
   display: inline-table;
   color: #fff;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(0, 0, 0);
   padding: .1em 1em .1em 1em;
   margin: 0 auto;
+}
+
+.project-header {
+  background-color: #2299ff;
 }
 
 .contact-container {
@@ -134,22 +132,31 @@ h3 {
   text-align: center;
 }
 
+#home {
+  background-color: #2299ff;
+}
+
+#about {
+  background-color: #2299ff;
+}
+
 #about-info {
   width: 80%;
   justify-content: flex-start;
 }
 
-.info-container .personal-text-container p {
+.personal-text-section {
   display: inline-block;
   width: max-content;
-  max-width: 100%;
+  max-width: 80%;
+  min-width: 500px;
   color: #636363;
   background-color: white;
   margin: 0 0 1.2em 0;
-  padding-left: 5px;
+  padding: 10px;
 }
 
-.info-container .personal-text-container p::selection {
+.personal-text-section::selection {
   background: black;
 }
 
