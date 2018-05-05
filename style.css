@@ -23,6 +23,11 @@ body {
   margin: 0 auto;
 }
 
+.subheader {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
 h3 a {
   color: inherit;
 }
@@ -226,6 +231,23 @@ h3 {
   height: 300px;
   width: 300px;
   margin-bottom: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pulse {
+  background-image: url('./assets/pulse.png');
+  
+}
+
+#hamono {
+  background-image: url('./assets/hamono-cover/hamono-cover-4.png');
+  background-size: cover;
+}
+
+#waddupr {
+  background-image: url('./assets/waddupr.png')
 }
 
 .project-description {
