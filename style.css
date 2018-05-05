@@ -5,7 +5,7 @@ body {
 }
 
 ::selection {
-  background: white;
+  background: rgb(119, 119, 119);
 }
 
 .main-container {
@@ -65,6 +65,10 @@ li {
 
 ul li a {
   color: white;
+}
+
+ul li::selection, ul a::selection, ul::selection {
+  background-color: black;
 }
 
 a {
