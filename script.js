@@ -1,18 +1,17 @@
 document.getElementById('home-nav-button').onclick = (event) => {
-  document.querySelector(event.target.hash).scrollIntoView({
+  document.getElementById('home').scrollIntoView({
     behavior: 'smooth'
-  });
+  })
 }
 
 document.getElementById('about-nav-button').onclick = (event) => {
-  document.querySelector(event.target.hash).scrollIntoView({
+  document.getElementById('about').scrollIntoView({
     behavior: 'smooth'
-  });
+  })
 }
 
 document.getElementById('projects-nav-button').onclick = (event) => {
-  document.querySelector(event.target.hash).scrollIntoView({
+  document.getElementById('projects').scrollIntoView({
     behavior: 'smooth'
-  });
+  })
 }
-

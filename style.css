@@ -70,6 +70,7 @@ ul li a {
 a {
   color: #FFA922;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
