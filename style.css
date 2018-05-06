@@ -107,6 +107,21 @@ h2 {
   font-size: 3em;
 }
 
+.project-cover:hover h2 {
+  transform: translatey(0px);
+	animation: float .3s ease-in;
+}
+
+.project-cover:hover h3 {
+  transform: translatey(0px);
+	animation: float .4s ease-in;
+}
+
+.project-cover:hover h5 {
+  transform: translatey(0px);
+	animation: float .5s ease-in;
+}
+
 h4 {
   display: inline-table;
   color: #fff;
@@ -229,14 +244,14 @@ h4 {
 .project {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  max-height: 700px;
+  width: 600px;
+  height: 400px;
   margin: .2em;
   background-color: rgb(49, 49, 49);
 }
 
 .project-image {
-  height: 300px;
+  height: 400px;
   width: inherit;
   background-size: contain;
   background-repeat: no-repeat;
@@ -246,10 +261,10 @@ h4 {
 .project-cover {
   position: absolute;
   opacity: 0;
-  height: 300px;
-  width: 420px;
+  height: 400px;
+  width: 570px;
   padding-left: 30px;
-  background-color: rgba(34, 170, 255, .8);
+  background-color: rgba(34, 170, 255, 1);
   transition: opacity 0.2s ease-out 0s;
 }
 
@@ -261,17 +276,33 @@ h4 {
   background-image: url('./assets/pulse.png');
 }
 
+#pulse + div {
+  background-color: rgb(32, 200, 165);
+}
+
 #hamono {
   background-image: url('./assets/hamono-cover/hamono-cover-4.png');
   background-size: cover;
+}
+
+#hamono + div {
+  background-color: rgb(104, 1, 1);
 }
 
 #seabird {
   background-image: url('./assets/seabird.png')
 }
 
+#seabird + div {
+  background-color: rgb(81, 165, 123)
+}
+
 #waddupr {
   background-image: url('./assets/waddupr.png')
+}
+
+#waddupr + div {
+  background-color: black;
 }
 
 #waddupboard {
@@ -324,5 +355,17 @@ h4 {
     text-align: left;
     margin-left: 50px;
     width: 100%;
+  }
+}
+
+
+@keyframes float {
+  0% {
+    opacity: 0;
+		transform: translatey(20px);
+	}
+  100% {
+    opacity: 1;
+		transform: translatey(0px);
   }
 }
