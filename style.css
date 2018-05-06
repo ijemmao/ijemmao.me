@@ -28,11 +28,11 @@ body {
   margin: 10px 0;
 }
 
-h3 a {
+h4 a {
   color: inherit;
 }
 
-h3 a:hover {
+h4 a:hover {
   color: #FFA922;
 }
 
@@ -107,7 +107,7 @@ h2 {
   font-size: 3em;
 }
 
-h3 {
+h4 {
   display: inline-table;
   color: #fff;
   background-color: rgb(0, 0, 0);
@@ -267,7 +267,7 @@ h3 {
 }
 
 #seabird {
-  background-image: url('./assets/blue.jpg')
+  background-image: url('./assets/seabird.png')
 }
 
 #waddupr {
