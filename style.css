@@ -49,6 +49,7 @@ h4 a:hover {
 nav {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 nav ul {
@@ -265,6 +266,7 @@ h5 {
   position: absolute;
   opacity: 0;
   height: 400px;
+  width: 48%;
   width: 570px;
   padding-left: 30px;
   background-color: rgba(34, 170, 255, 1);
