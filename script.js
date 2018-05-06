@@ -16,8 +16,8 @@ document.getElementById('projects-nav-button').onclick = (event) => {
   })
 }
 
-document.getElementById('work-nav-button').onclick = (event) => {
-  document.getElementById('work').scrollIntoView({
+document.getElementById('experience-nav-button').onclick = (event) => {
+  document.getElementById('experience').scrollIntoView({
     behavior: 'smooth'
   })
 }
