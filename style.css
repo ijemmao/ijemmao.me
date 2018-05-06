@@ -233,16 +233,22 @@ h3 {
 .project-image {
   height: 300px;
   width: inherit;
-  margin-bottom: 1em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .project-cover {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  height: 300px;
+  width: 450px;
   background-color: rgba(34, 170, 255, .8);
-  height: inherit;
+  transition: opacity 0.2s ease-out 0s;
+}
+
+.project-cover:hover {
+  opacity: 1;
 }
 
 #pulse {
