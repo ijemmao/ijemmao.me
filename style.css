@@ -252,6 +252,7 @@ h5 {
   height: 400px;
   margin: .2em;
   background-color: rgb(49, 49, 49);
+  cursor: pointer;
 }
 
 .project-image {
@@ -286,8 +287,9 @@ h5 {
 }
 
 #hamono {
-  background-image: url('./assets/hamono-cover/hamono-cover-4.png');
-  background-size: cover;
+  background-image: url('./assets/hamono-cover.png');
+  background-color: #5F0000;
+  background-size: contain;
 }
 
 #hamono + div {
