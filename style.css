@@ -84,7 +84,7 @@ a {
 }
 
 a:hover {
-  color: #FFA922;
+  color: rgb(255, 205, 125);
   transition: all .2s;
 }
 
@@ -118,6 +118,14 @@ h4 {
 
 h5 {
   margin: 5px;
+}
+
+#projects h1 {
+  margin-top: .5em;
+}
+
+#experience h1 {
+  margin-top: .5em;
 }
 
 .project-cover:hover h2 {
@@ -270,6 +278,7 @@ h5 {
   width: 48%;
   width: 570px;
   padding-left: 30px;
+  color: #252525;
   background-color: rgba(34, 170, 255, 1);
   transition: opacity 0.2s ease-out 0s;
 }
@@ -294,6 +303,7 @@ h5 {
 
 #hamono + div {
   background-color: rgb(104, 1, 1);
+  color: #d8d8d8;
 }
 
 #seabird {
@@ -303,6 +313,7 @@ h5 {
 
 #seabird + div {
   background-color: rgb(0, 126, 0);
+  color: white;
 }
 
 #waddupr {
@@ -321,6 +332,7 @@ h5 {
 
 #waddupboard + div {
   background-color: rgb(4, 2, 23);
+  color: white;
 }
 
 #needone {
@@ -340,7 +352,8 @@ h5 {
 }
 
 #ebay {
-  background-image: url('./assets/ebay.png')
+  background-image: url('./assets/ebay.png');
+  background-size: 90%;
 }
 
 #ebay + div {
@@ -348,7 +361,8 @@ h5 {
 }
 
 #dali {
-  background-image: url('./assets/dali.png')
+  background-image: url('./assets/dali.png');
+  background-size: 90%;
 }
 
 #dali + div {
@@ -358,7 +372,6 @@ h5 {
 .project-description {
   width: 300px;
   max-height: 200px;
-  color: #252525;
   text-align: left;
 }
 
