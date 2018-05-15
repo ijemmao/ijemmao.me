@@ -15,3 +15,9 @@ document.getElementById('projects-nav-button').onclick = (event) => {
     behavior: 'smooth'
   })
 }
+
+document.getElementById('experience-nav-button').onclick = (event) => {
+  document.getElementById('experience').scrollIntoView({
+    behavior: 'smooth'
+  })
+}
