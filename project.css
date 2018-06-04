@@ -118,3 +118,17 @@ a:hover {
   color: rgb(255, 205, 125);
   transition: all .2s;
 }
+
+
+@media (max-width:600px) {
+  .landing-image {
+    position: relative;
+    height: 400px;
+    top: 0;
+    right: 0;
+  }
+
+  .content-container {
+    margin-top: 25px;
+  }
+}
