@@ -16,7 +16,34 @@ body {
 .banner-container {
   height: 200px;
   width: 100%;
+}
+
+#pulse {
+  background-color: rgb(32, 200, 165)
+}
+
+#hamono {
   background-color: #5f0000;
+}
+
+#seabird {
+  background-color: rgb(0, 126, 0)
+}
+
+#waddupr {
+  background-color:#ffde01;
+}
+
+#waddupboard {
+  background-color: rgb(4, 2, 23);
+}
+
+#needone {
+  background-color: rgb(147, 225, 251);
+}
+
+#purrpl {
+  background-color: rgb(95, 62, 153);
 }
 
 .header-container {
