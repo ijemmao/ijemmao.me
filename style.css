@@ -343,6 +343,15 @@ h5 {
   background-color: rgb(147, 225, 251);
 }
 
+#purrpl {
+  background-image: url('./assets/purrpl.png')
+}
+
+#purrpl + div {
+  background-color: rgb(95, 62, 153);
+  color: white;
+}
+
 #task-bot {
   background-image: url('./assets/blue.jpg')
 }
