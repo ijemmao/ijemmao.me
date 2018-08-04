@@ -15,7 +15,16 @@ body {
   justify-content: center;
   width: 100%;
   height: fit-content;
+  height: -moz-fit-content;
   min-height: 100%;
+}
+
+@-moz-document url-prefix() {
+  .main-container {
+    height: fit-content;
+    height: -moz-fit-content;
+    min-height: 1024px;
+  }
 }
 
 .intro-container {
@@ -92,15 +101,22 @@ a:hover {
   padding: 1.3em;
 }
 
+.name-container {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   display: inline-block;
   font-weight: 700;
   font-size: 4.5em;
   color: #fff;
   margin: 0;
+  padding: 0 .1em;
   margin-top: .05em;
-  padding: 0 .3em 0 .1em;
   background-color: black;
+  width: max-content;
+  width: -moz-max-content;
 }
 
 h2 {
@@ -189,10 +205,6 @@ h5 {
 }
 
 .personal-text-section {
-  display: inline-block;
-  width: max-content;
-  max-width: 80%;
-  min-width: 500px;
   color: #636363;
   background-color: white;
   margin: 0 0 1.2em 0;
@@ -223,26 +235,20 @@ h5 {
 }
 
 .personal-text-container {
-  display: flex;
+  width: 50%;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: left;
-  margin-left: 50px;
-  width: 47%;
 }
 
 .profile-image-container {
-  display: flex;
-  width: 330px;
-  height: 330px;
-  margin: 0 1em 3em 1.7em;
+  width: 50%;
+  justify-content: center;
 }
 
 .profile-image {
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  margin-right: .3em;
+  height: 300px;
 }
 
 .projects-container {
@@ -275,7 +281,6 @@ h5 {
   position: absolute;
   opacity: 0;
   height: 400px;
-  width: 48%;
   width: 570px;
   padding-left: 30px;
   color: #252525;
@@ -336,6 +341,7 @@ h5 {
 }
 
 #needone {
+  background-color: rgba(170, 170, 188);
   background-image: url('./assets/needone-cover.png')
 }
 
@@ -344,6 +350,7 @@ h5 {
 }
 
 #purrpl {
+  background-color: rgb(95, 62, 153);
   background-image: url('./assets/purrpl.png')
 }
 
@@ -384,33 +391,88 @@ h5 {
   text-align: left;
 }
 
+.contact {
+  text-align: center;
+}
 
-@media (max-width:600px) {
+@media only screen and (max-width: 868px) {
+  nav {
+    display: none;
+  }
   .main-container {
-    height: 180%;
+    height: 100%;
   }
   .main-container .info-container {
     width: 100%;
   }
   .intro-container {
+    width: 100%;
     align-content: center;
     align-items: center;
     text-align: center;
   }
-  .intro-container h1 {
-    font-size: 3.5em;
+  .name-container {
+      padding: 0 20px;
   }
-  .intro-container .contact-container {
-    width: 100%;
-    text-align: center;
+  
+  h1 {
+    font-size: 3.3em;
+    margin-bottom: 10px;
   }
-  .personal-container .personal-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  .intro-container h3 {
+    font-size: 1em;
     text-align: left;
-    margin-left: 50px;
+    font-weight: bold;
+  }
+
+  .intro-container .contact-container {
+    width: 75%;
+  }
+
+  .intro-container .contact-container h4 {
+    margin-top: 20px;
+  }
+
+  .main-container {
+    height: fit-content;
+    height: -moz-fit-content;
+  }
+
+  .profile-image-container {
+    margin: 0 auto;
+    margin-bottom: 4em;
     width: 100%;
+  }
+  
+  .profile-image {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .personal-text-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .personal-text-section {
+    width: initial;
+    min-width: 270px;
+  }
+
+  .project {
+    width: 100%;
+    height: 275px;
+  }
+
+  .project-cover {
+    width: 91.1%;
+    height: 275px;
+    padding-left: 7.9%;
   }
 }
 
