@@ -103,8 +103,8 @@ h1 {
   font-size: 4.5em;
   color: #fff;
   margin: 0;
+  padding: 0 .1em;
   margin-top: .05em;
-  padding: 0 .3em 0 .1em;
   background-color: black;
   width: max-content;
   width: -moz-max-content;
@@ -196,9 +196,6 @@ h5 {
 }
 
 .personal-text-section {
-  display: inline-block;
-  width: 80%;
-  min-width: 500px;
   color: #636363;
   background-color: white;
   margin: 0 0 1.2em 0;
@@ -229,26 +226,20 @@ h5 {
 }
 
 .personal-text-container {
-  display: flex;
+  width: 50%;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: left;
-  margin-left: 50px;
-  width: 47%;
 }
 
 .profile-image-container {
-  display: flex;
-  width: 330px;
-  height: 330px;
-  margin: 0 1em 3em 1.7em;
+  width: 50%;
+  justify-content: center;
 }
 
 .profile-image {
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  margin-right: .3em;
+  height: 300px;
 }
 
 .projects-container {
@@ -392,7 +383,7 @@ h5 {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   nav {
     display: none;
   }
@@ -413,7 +404,7 @@ h5 {
   }
   
   h1 {
-    font-size: 3.5em;
+    font-size: 3.3em;
     margin-bottom: 10px;
   }
 
@@ -440,6 +431,12 @@ h5 {
     height: fit-content;
     height: -moz-fit-content;
   }
+
+  .profile-image-container {
+    margin: 0 auto;
+    margin-bottom: 4em;
+    width: 100%;
+  }
   
   .profile-image {
     height: 300px;
@@ -453,7 +450,7 @@ h5 {
 
   .personal-text-section {
     width: initial;
-    min-width: 300px;
+    min-width: 270px;
   }
 
   .project {
@@ -464,6 +461,7 @@ h5 {
   .project-cover {
     width: 91.1%;
     height: 275px;
+    padding-left: 7.9%;
   }
 }
 
