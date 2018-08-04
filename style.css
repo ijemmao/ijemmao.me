@@ -15,7 +15,16 @@ body {
   justify-content: center;
   width: 100%;
   height: fit-content;
+  height: -moz-fit-content;
   min-height: 100%;
+}
+
+@-moz-document url-prefix() {
+  .main-container {
+    height: fit-content;
+    height: -moz-fit-content;
+    min-height: 1024px;
+  }
 }
 
 .intro-container {
@@ -382,6 +391,9 @@ h5 {
   text-align: left;
 }
 
+.contact {
+  text-align: center;
+}
 
 @media only screen and (max-width: 868px) {
   nav {
@@ -409,7 +421,6 @@ h5 {
   }
 
   .contact {
-    text-align: center;
     padding: 0 10px;
   }
 
