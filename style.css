@@ -158,6 +158,11 @@ h5 {
   font-size: 3em;
   text-decoration: underline;
   margin-top: .5em;
+  margin-bottom: 4em;
+}
+
+#about h1 {
+  margin: 1em 0;
 }
 
 #experience h1 {
@@ -165,7 +170,8 @@ h5 {
   margin: 0 auto;
   text-align: left;
   text-decoration: underline;
-  margin-top: 5em;
+  margin-top: 3em;
+  margin-bottom: 4em;
 }
 
 .project-cover:hover h2 {
@@ -223,7 +229,6 @@ h5 {
 .personal-text-section {
   color: #636363;
   background-color: white;
-  margin: 0 0 1.2em 0;
   padding: 10px;
 }
 
@@ -243,7 +248,6 @@ h5 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 5em;
 }
 
 .personal-container div {
