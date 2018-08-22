@@ -27,7 +27,6 @@ body {
 }
 
 .intro-container {
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -129,9 +128,6 @@ h1 {
   margin: 0;
   padding: 0 .1em;
   margin-top: .05em;
-  /* background-color: black; */
-  width: max-content;
-  width: -moz-max-content;
 }
 
 h2 {
@@ -158,7 +154,7 @@ h5 {
   font-size: 3em;
   text-decoration: underline;
   margin-top: .5em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 #about h1 {
@@ -171,7 +167,7 @@ h5 {
   text-align: left;
   text-decoration: underline;
   margin-top: 3em;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 .project-cover:hover h2 {
@@ -189,15 +185,12 @@ h5 {
 	animation: float .5s ease-in;
 }
 
-.project-header {
-  /* background-color: #2299ff; */
+.contact-container {
+  width: 100%;
 }
 
-.contact-container {
-  width: 50%;
-  font-size: 1em;
-  text-align: left;
-  margin-top: .5em;
+.contact-container h4 {
+  margin-top: 20px;
 }
 
 .contact-icon {
@@ -229,7 +222,6 @@ h5 {
 .personal-text-section {
   color: #636363;
   background-color: white;
-  padding: 10px;
 }
 
 .personal-text-section::selection {
@@ -419,9 +411,6 @@ h5 {
   nav {
     display: none;
   }
-  /* .main-container {
-    height: 100%;
-  } */
   .main-container .info-container {
     width: 100%;
   }
