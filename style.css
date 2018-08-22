@@ -121,13 +121,9 @@ a:hover {
 }
 
 h1 {
-  display: inline-block;
-  font-weight: 700;
   font-size: 2.3em;
   color: #333;
   margin: 0;
-  padding: 0 .1em;
-  margin-top: .05em;
 }
 
 h2 {
@@ -149,16 +145,16 @@ h5 {
 
 #projects h1 {
   width: 80%;
-  margin: 0 auto;
   text-align: left;
   font-size: 3em;
   text-decoration: underline;
-  margin-top: .5em;
-  margin-bottom: 1em;
+  margin: .5em 0 1em 0;
 }
 
 #about h1 {
   margin: 1em 0;
+  text-align: right;
+  width: 96%;
 }
 
 #experience h1 {
@@ -236,9 +232,6 @@ h5 {
 
 .info-container div h1 {
   display: inline-block;
-  margin: 0 auto;
-  text-align: right;
-  width: 95%;
 }
 
 .personal-container {
@@ -410,6 +403,7 @@ h5 {
 }
 
 .contact {
+  margin-top: 2em;
   text-align: center;
 }
 
