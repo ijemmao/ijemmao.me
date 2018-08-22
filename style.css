@@ -12,18 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   height: fit-content;
   height: -moz-fit-content;
-}
-
-@-moz-document url-prefix() {
-  .main-container {
-    height: fit-content;
-    height: -moz-fit-content;
-    min-height: 1024px;
-  }
 }
 
 .subheaders {
