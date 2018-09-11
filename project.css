@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Work+Sans:300,400,500');
+
+body {
+  font-family: 'Roboto Mono', 'Work Sans', sans-serif;
+  margin: 0
+}
+
+::selection {
+  background: rgb(119, 119, 119);
+}
+
+.main-container {
+  width: 100%;
+}
+
+.banner-container {
+  height: 200px;
+  width: 100%;
+}
+
+#pulse {
+  background-color: rgb(32, 200, 165)
+}
+
+#hamono {
+  background-color: #5f0000;
+}
+
+#seabird {
+  background-color: rgb(0, 126, 0)
+}
+
+#waddupr {
+  background-color:#ffde01;
+}
+
+#waddupboard {
+  background-color: rgb(4, 2, 23);
+}
+
+#needone {
+  background-color: rgb(147, 225, 251);
+}
+
+#purrpl {
+  background-color: rgb(95, 62, 153);
+}
+
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+h1, h5 {
+  text-align: right;
+}
+
+h1 {
+  top: 150px;
+}
+
+h5 {
+  color: #777777;
+}
+
+.landing-image {
+  position: absolute;
+  height: 600px;
+  top: 0;
+  right: 28%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+nav ul {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  padding: .2em 1em .2em 1em;
+  margin-right: 2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li::selection, ul a::selection, ul::selection {
+  background-color: black;
+}
+
+a {
+  color: #FFA922;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(255, 205, 125);
+  transition: all .2s;
+}
+
+
+@media (max-width:600px) {
+  .landing-image {
+    position: relative;
+    height: 400px;
+    right: 3%;
+    margin: 0 auto;
+  }
+
+  .content-container {
+    margin-top: 25px;
+  }
+}
