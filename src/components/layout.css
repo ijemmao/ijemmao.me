@@ -274,7 +274,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Europa', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Europa-Light', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -632,6 +632,14 @@ pre tt:after {
 }
 
 /* Custom Styles */
+.bold {
+  font-family: 'Europa';
+}
+
+.short {
+  width: 250px;
+}
+
 .navBarOptions a {
   text-decoration: none;
   color: #888;

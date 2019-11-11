@@ -29,11 +29,16 @@ const Layout = ({ children }) => {
     <Header
       siteTitle={data.site.siteMetadata.title}
       navBar={navBar}
+      height={'5vh'}
     />
       <div
         style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1340,
+          minHeight: '95vh',
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}

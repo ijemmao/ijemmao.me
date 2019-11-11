@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { map } from 'lodash';
 
-const Header = ({ siteTitle, navBar }) => {
+const Header = ({ siteTitle, navBar, height }) => {
   const renderNavBarOptions = () => {
     const navBarOptions = map(navBar, (option) => {
       const { label, route } = option;
@@ -25,11 +25,10 @@ const Header = ({ siteTitle, navBar }) => {
   return (
     <header
       style={{
-        marginBottom: `1.45rem`,
         display: 'flex',
-        padding: '20px',
         justifyContent: 'flex-end',
         alignItems: 'center',
+        height,
       }}
     >
       {renderNavBarOptions()}
@@ -40,11 +39,13 @@ const Header = ({ siteTitle, navBar }) => {
 Header.propTypes = {
   siteTitle: PropTypes.string,
   navBar: PropTypes.array,
+  height: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
   navBar: [],
+  height: '3vh',
 }
 
 export default Header
