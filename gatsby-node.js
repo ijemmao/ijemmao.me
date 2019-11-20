@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const pages = require('./src/utils/constants/navbar');
 
-// You can delete this file if you're not using it
+exports.createPages = ({ actions }) => {
+  const { createPage } = actions;
+
+  pages.forEach(page => {
+    const { label, route } = page; 
+    createPage({
+      path: route,
+      component: require.resolve(`./src/pages/${label}.js`),
+      context: { page },
+    });
+  });
+}

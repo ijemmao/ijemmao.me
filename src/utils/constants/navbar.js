@@ -1,4 +1,4 @@
-const navBar = [
+exports.navBar = [
   {
     label: 'home',
     route: '/',
@@ -12,5 +12,3 @@ const navBar = [
     route: '/about',
   }
 ];
-
-export default navBar;
