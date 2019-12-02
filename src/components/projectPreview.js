@@ -14,7 +14,7 @@ const ProjectPreview = ({ color, title, src, duration, position, id }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{ backgroundColor: `${color}` }}
-      className="projectContainer"
+      className="projectPreviewContainer"
     >
       <div className={`${hover ? 'maskHover' : ''} ${id} mask`}>
         <img src={src} alt="Project mock" />
