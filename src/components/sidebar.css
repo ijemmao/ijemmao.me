@@ -1,0 +1,14 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  top: 100px;
+  left: 80px;
+}
+
+.sidebarLink {
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}

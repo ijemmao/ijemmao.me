@@ -1,42 +1,50 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { map } from 'lodash';
+import './header.css';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+const Header = ({ siteTitle, pages, height }) => {
+  const renderNavBarOptions = () => (
+    <div className="navBarOptions">
+      {map(pages, (page) => {
+        const { label, route } = page;
+        return (
+          <Link
+            to={route}
+          >
+            {label}
+          </Link>
+        );
+      })
+      }
+    </div>
+);
+    
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        display: 'flex',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        height,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+      {renderNavBarOptions()}
+    </header>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  pages: PropTypes.array,
+  height: PropTypes.string,
 }
 
 Header.defaultProps = {
   siteTitle: ``,
+  pages: [],
+  height: '3vh',
 }
 
 export default Header
