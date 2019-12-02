@@ -1,0 +1,7 @@
+a[aria-current="page"] {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navBarOptions {
+  z-index: 2;
+}
