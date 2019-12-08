@@ -50,11 +50,15 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: color .1s ease;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
 a:active,
 a:hover {
+  color: rgba(0, 0, 0, 0.8);
   outline-width: 0;
 }
 abbr[title] {
@@ -638,6 +642,7 @@ pre tt:after {
 
 .short {
   width: 250px;
+  font-size: 100px;
 }
 
 .navBarOptions a {
