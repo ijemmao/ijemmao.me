@@ -3,7 +3,15 @@ import timetracker from '../images/timetracker.png';
 import hamono from '../images/hamono.png';
 import './projectPreview.css';
 
-const ProjectPreview = ({ color, title, src, duration, position, id }) => {
+const ProjectPreview = ({
+  color,
+  title,
+  src,
+  url,
+  duration,
+  position,
+  id
+}) => {
   const [hover, setHover] = useState(false);
   
   const handleMouseEnter = (e) => setHover(true);
@@ -11,6 +19,7 @@ const ProjectPreview = ({ color, title, src, duration, position, id }) => {
 
   return (
     <div
+      onClick={() => window.location = url }
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{ backgroundColor: `${color}` }}
