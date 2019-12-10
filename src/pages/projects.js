@@ -7,11 +7,12 @@ import { projects } from '../utils/constants/projects';
 
 const Projects = () => {
   useEffect(() => {
-    ScrollReveal().reveal('.projectPreviewContainer');
+    // ScrollReveal().reveal('.projectPreviewContainer');
   }, [])
   const renderProjectPreviews = () => (
     map(projects, (project) => (
       <ProjectPreview
+        key={project.title}
         {...project}
       />
     ))
