@@ -17,6 +17,7 @@ const ProjectPreview = ({
   const handleMouseEnter = (e) => setHover(true);
   const handleMouseLeave = (e) => setHover(false);
 
+
   return (
     <div
       onClick={() => window.location = url }
