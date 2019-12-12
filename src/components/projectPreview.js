@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import timetracker from '../images/timetracker.png';
 import hamono from '../images/hamono.png';
-import './projectPreview.css';
+import './projectPreview.less';
 
 const ProjectPreview = ({
   color,
@@ -17,6 +17,7 @@ const ProjectPreview = ({
   const handleMouseEnter = (e) => setHover(true);
   const handleMouseLeave = (e) => setHover(false);
 
+
   return (
     <div
       onClick={() => window.location = url }
@@ -26,7 +27,9 @@ const ProjectPreview = ({
       className="projectPreviewContainer"
     >
       <div className={`${hover ? 'maskHover' : ''} ${id} mask`}>
-        <img src={src} alt="Project mock" />
+        <img
+          src={src}
+          alt="Project mock" />
       </div>
       <div className="headerContainer">
         <h3>{title}</h3>

@@ -656,3 +656,19 @@ pre tt:after {
   color: rgba(0, 0, 0, 0.8);
   transition: all .2s ease;
 }
+
+.socialLink {
+  height: 2rem;
+  margin: 0 2rem 1.45rem 2rem;
+  cursor: pointer;
+  transition: filter .2s ease;
+}
+
+/* Filters generated from: https://codepen.io/sosuke/pen/Pjoqqp */
+#twitter:hover {
+  filter: invert(56%) sepia(41%) saturate(5684%) hue-rotate(179deg) brightness(103%) contrast(90%);
+}
+
+#github:hover {
+  filter: invert(66%) sepia(92%) saturate(3416%) hue-rotate(350deg) brightness(100%) contrast(100%);
+}
