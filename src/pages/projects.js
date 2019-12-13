@@ -19,9 +19,11 @@ const Projects = () => {
   )
   return (
     <Layout>
-      <div style={{ marginTop: '10vh' }}>
-        {renderProjectPreviews()}
-      </div>
+      <main>
+        <div style={{ marginTop: '10vh' }}>
+          {renderProjectPreviews()}
+        </div>
+      </main>
     </Layout>
   );
 };
