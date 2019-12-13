@@ -13,12 +13,14 @@ const Home = () => (
       width: '95vw',
       maxWidth: 1600,
     }}>
-    <div style={{
-      display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'flex-end',
-      width: '100%',
-    }}>
+    <div 
+      style={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'flex-end',
+        width: '100%',
+      }}
+    >
       <Col>
         <h1>Ijemma</h1>
         <h1>Onwuzulike</h1>
@@ -30,6 +32,5 @@ const Home = () => (
     </div>
     </Row>
   </Layout>
-);
-
+  );
 export default Home;

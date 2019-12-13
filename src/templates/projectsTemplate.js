@@ -1,5 +1,6 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React, { useEffect } from 'react';
+import $ from 'jquery';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import './projectsTemplate.less';
 
@@ -8,16 +9,17 @@ export default function Template({
 }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
+  useEffect(() => {
+    $('.blog-post-content').fadeIn(500);
+  }, []);
+
   return (
     <Layout>
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </div>
-      </div>
+      <div
+        className="blog-post-content"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   )
 }
