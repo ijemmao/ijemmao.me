@@ -38,7 +38,6 @@ const Header = ({ siteTitle, pages, height }) => {
     
     handleNavigation(route, projectDataUrl, (data) => {
       const main = document.querySelector('main');
-      console.log(main);
       renderPage(main, label);
     });
   }
@@ -62,14 +61,7 @@ const Header = ({ siteTitle, pages, height }) => {
 );
     
   return (
-    <header
-      style={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        height,
-      }}
-    >
+    <header style={{ height }}>
       {renderNavBarOptions()}
     </header>
   );
