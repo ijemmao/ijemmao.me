@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
-import ProjectPreview from '../components/projectPreview';
+import ProjectPreview from '../../components/projectPreview';
 import { map } from 'lodash';
-import { projects } from '../utils/constants/projects';
+import { projects } from '../../utils/constants/projects';
 
 const ProjectsContainer = () => {
   useEffect(() => {
