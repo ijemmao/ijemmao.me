@@ -657,6 +657,22 @@ pre tt:after {
   transition: all .2s ease;
 }
 
+.homeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  width: 95vw;
+  max-width: 1600;
+}
+
+.homeContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+
 .socialLink {
   height: 2rem;
   margin: 0 2rem 1.45rem 2rem;
