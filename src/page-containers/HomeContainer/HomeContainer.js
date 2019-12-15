@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
 import { Row, Col } from 'antd';
-import Twitter from '../images/twitter.svg';
-import GitHub from '../images/github.svg';
+import Twitter from '../../images/twitter.svg';
+import GitHub from '../../images/github.svg';
 import './HomeContainer.less';
 
 const HomeContainer = () => {

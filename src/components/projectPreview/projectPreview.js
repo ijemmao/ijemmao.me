@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { unmountComponentAtNode } from 'react-dom';
 import $ from 'jquery';
-import timetracker from '../images/timetracker.png';
-import hamono from '../images/hamono.png';
-import handleNavigation from '../utils/handleNavigation';
+import timetracker from '../../images/timetracker.png';
+import hamono from '../../images/hamono.png';
+import handleNavigation from '../../utils/handleNavigation';
 import './projectPreview.less';
 
 const ProjectPreview = ({
