@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import $ from 'jquery';
 import { Row, Col } from 'antd';
 import Twitter from '../images/twitter.svg';
 import GitHub from '../images/github.svg';
 
-const HomeContainer = () => (
+const HomeContainer = () => {
+  useEffect(() => {
+    $('.homeContainer').fadeIn(300);
+    $('.homeContainer').css({ display: 'flex' });
+  }, []);
+  return (
     <Row className="homeContainer">
       <div className="homeContent">
         <Col>
@@ -16,6 +22,7 @@ const HomeContainer = () => (
         </div>
       </div>
     </Row>
-);
+  );
+};
 export default HomeContainer;
 

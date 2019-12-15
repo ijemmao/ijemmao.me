@@ -656,13 +656,18 @@ pre tt:after {
   transition: all .2s ease;
 }
 
+.aboutContainer {
+  display: none;
+}
+
 .homeContainer {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   height: 90vh;
   width: 95vw;
   max-width: 1600;
+  transition: display .3s ease;
 }
 
 .homeContent {
