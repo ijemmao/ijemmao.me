@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery';
+import './AboutContainer.less';
 
 const AboutContainer = () => {
   useEffect(() => {
