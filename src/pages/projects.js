@@ -1,31 +1,14 @@
-import React, { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
+import React from 'react';
 import Layout from '../components/layout';
-import ProjectPreview from '../components/projectPreview';
-import { map } from 'lodash';
-import { projects } from '../utils/constants/projects';
+import { ProjectsContainer } from '../page-containers';
 
-const Projects = () => {
-  useEffect(() => {
-    ScrollReveal().reveal('.projectPreviewContainer');
-  }, [])
-  const renderProjectPreviews = () => (
-    map(projects, (project) => (
-      <ProjectPreview
-        key={project.title}
-        {...project}
-      />
-    ))
-  )
-  return (
-    <Layout>
-      <main>
-        <div style={{ marginTop: '10vh' }}>
-          {renderProjectPreviews()}
-        </div>
-      </main>
-    </Layout>
-  );
-};
+const Projects = () => (
+  <Layout>
+    <main>
+      <ProjectsContainer />
+    </main>
+  </Layout>
+);
+
 
 export default Projects;

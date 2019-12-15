@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { unmountComponentAtNode } from 'react-dom';
 import $ from 'jquery';
 import timetracker from '../images/timetracker.png';
 import hamono from '../images/hamono.png';
+import handleNavigation from '../utils/handleNavigation';
 import './projectPreview.less';
 
 const ProjectPreview = ({
@@ -20,30 +21,25 @@ const ProjectPreview = ({
   const handleMouseLeave = (e) => setHover(false);
 
   const pageTransition = () => {
-    window.history.pushState(null, null, url);
     const projectDataUrl = `${window.location.origin}/page-data${url}/page-data.json`;
-    axios({
-      method: 'get',
-      url: projectDataUrl
-    }).then(({ data }) => {
+
+    handleNavigation(url, projectDataUrl, (data) => {
       const { result: { data: { markdownRemark: { html: projectData } } } } = data;
       const projectPage = $(projectData);
 
+
       // Grabs sections of old and new page
-      const main = document.body.querySelector('main');
+      const main = document.querySelector('main');
       const blogPostContent = document.createElement('div');
       blogPostContent.classList.add('blog-post-content');
-
       // Updates DOM
       $(main.firstChild).fadeOut(300, () => {
-        main.firstChild.remove();
+        unmountComponentAtNode(main);
 
         setTimeout(() => {
-          main.appendChild(blogPostContent);
           $(blogPostContent).html(projectPage);
-
+          $(main).html(blogPostContent);
           $(blogPostContent).fadeIn(500);
-
         }, 300);
         
       });
