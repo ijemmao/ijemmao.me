@@ -36,20 +36,18 @@ const ProjectPreview = ({
       // Updates DOM
       
       $('.projectPreviewContainer').not(`#${ref.current.id}`).animate({ left: '-100vw' }, 800).promise().then(() => {
-      
-        $(`#${ref.current.id} > .mask`).animate({ height: 0 }, 800);
 
         const projectPreview = $(`#${ref.current.id}`);
         const headerContainer = $(`#${ref.current.id} > .headerContainer`);
         const projectImage = $(`#${ref.current.id}-image`);
         const imageContainer = projectImage.parent();
-        imageContainer.removeClass('mask');
+
+        imageContainer.removeClass('maskTransition');
         imageContainer.css({ overflow: 'hidden' });
         headerContainer.animate({ opacity: 0 }, 500);
-
-        imageContainer.animate({ height: 0 }, 500, () => {
-          imageContainer.remove();
-        });
+        imageContainer.animate({ height: 0 }, 500, () =>
+          imageContainer.remove()
+        );
 
         setTimeout(() => {
           projectPreview.animate({ width: 0 }, 500, () => {
@@ -62,7 +60,7 @@ const ProjectPreview = ({
               }, 300);
             }); 
           });
-        }, 500);
+        }, 1000);
         });
       });
   }
@@ -77,7 +75,7 @@ const ProjectPreview = ({
       className="projectPreviewContainer"
       ref={ref}
     >
-      <div className={`${hover ? 'maskHover' : ''} ${id} mask`}>
+      <div className={`${hover ? 'maskHover' : ''} ${id} mask maskTransition`}>
         <img
           id={`${id}-image`}
           src={src}

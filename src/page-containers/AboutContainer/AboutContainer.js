@@ -4,7 +4,7 @@ import './AboutContainer.less';
 
 const AboutContainer = () => {
   useEffect(() => {
-    $('.aboutContainer').fadeIn(300);
+    $('.aboutContainer').animate({ opacity: 1 }, 300);
   }, []);
   return (
     <span className="aboutContainer">
