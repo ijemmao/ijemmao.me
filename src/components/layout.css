@@ -656,3 +656,14 @@ pre tt:after {
   transition: all .2s ease;
 }
 
+.gatsby-resp-image-background-image {
+  width: 0;
+  margin: 100px 0;
+
+  img {
+    width: auto;
+    height: 90%;
+    left: 5%;
+  }
+};
+
