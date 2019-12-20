@@ -20,8 +20,15 @@ desktop game, ultimately called
 ## A Click-and-Drag Game
 All of us loved playing video games, and realized that we 
 could work together to make our own. There was five us in 
-total: two developers, two designers, and one musical 
-composer.
+total:
+
+Two designers: [Young Jang](https://www.linkedin.com/in/youngjang19/) 
+and [Lauren Gray](https://www.linkedin.com/in/lauren-gray-459988161/)
+
+Two developers: [Josiah Putman](https://www.linkedin.com/in/josiah-putman-77b25a127/) 
+and me
+
+One musical composer: [Summer Cody](https://www.linkedin.com/in/summercody/)
 
 Our main focus of this project was to create something that 
 was exciting but also manageable for a six-week time period. 
