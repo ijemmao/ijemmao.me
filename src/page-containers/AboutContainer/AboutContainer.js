@@ -8,13 +8,12 @@ const AboutContainer = () => {
   }, []);
   return (
     <span className="aboutContainer">
-      <h2>Hello <span role="img" aria-label="Brown hand waving">👋🏾</span></h2>
+      <h2 style={{ textAlign: 'center' }}>Hello <span role="img" aria-label="Brown hand waving">👋🏾</span></h2>
       <p>I'm Ijemma a software engineer at Squarespace in New York City.</p>
       <p>
-        Follow me on <a href="https://twitter.com/_ionwu_">Twitter</a> to see my latest work.
+        To keep up with my day-to-day, follow me on <a href="https://twitter.com/_ionwu_">Twitter</a>.
       </p>
-      <p>You can also see my professional experience on <a href="https://www.linkedin.com/in/ijemmao/">here</a>.</p>
-      <p>Thanks for stopping by!</p>
+      <p>For my professional experience, take a look at my <a href="https://www.linkedin.com/in/ijemmao/">LinkedIn</a>.</p>
     </span>
   );
 }

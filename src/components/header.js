@@ -9,7 +9,7 @@ import {
   AboutContainer
 } from '../page-containers';
 import handleNavigation from '../utils/handleNavigation';
-import './header.css';
+import './header.less';
 
 const Header = ({ siteTitle, pages, height }) => {
 

@@ -1,6 +1,6 @@
 exports.projects = [
   {
-    color: '#3C3B49',
+    color: '#4C2998',
     title: 'Pixel Legion',
     duration: 'Oct 2019 - Present',
     position: 'Full Stack Web Engineer',
