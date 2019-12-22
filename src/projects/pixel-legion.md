@@ -16,8 +16,8 @@ if I would learn development skills and processes.
 
 ## Connecting Gamers
 While I was scrolling through 
-[r/forhire](https://reddit.com/r/forhire), I came across a
-[vague post](https://www.reddit.com/r/forhire/comments/c0nuvx/hiring_midsenior_fullstack_developer_for_web/) 
+[r/forhire](https://reddit.com/r/forhire), I came across a non-descriptive
+[post](https://www.reddit.com/r/forhire/comments/c0nuvx/hiring_midsenior_fullstack_developer_for_web/) 
 that mentioned the tech that I'm comfortable with. I reached 
 out and got selected to start working on the project as soon 
 as possible.
