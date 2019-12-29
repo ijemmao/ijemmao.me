@@ -30,3 +30,27 @@
 #github:hover {
   filter: invert(66%) sepia(92%) saturate(3416%) hue-rotate(350deg) brightness(100%) contrast(100%);
 }
+
+@media only screen and (min-width: 375px) and (max-width: 1112px) {
+  .homeContent {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    .homeTitleContainer {
+      
+    }
+
+    .socialLinksContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+}
