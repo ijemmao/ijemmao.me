@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6,5],{RXBc:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),u=t("Bl7J"),r=t("gHPf"),c=t("vrFN");n.default=function(){return l.a.createElement(u.a,null,l.a.createElement(c.a,{title:"Home | Ijemma Onwuzulike"}),l.a.createElement(r.default,null))}},gHPf:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),u=t("4ya1");n.default=function(){return l.a.createElement("main",null,l.a.createElement(u.b,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-13996c0691c5c9e614a9.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),l=a.n(t),u=a("4ya1"),r=a("Bl7J"),c=a("vrFN");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"About | Ijemma Onwuzulike"}),l.a.createElement("main",null,l.a.createElement(u.a,null)))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-7abef18badb2e30a0830.js.map
