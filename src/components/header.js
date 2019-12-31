@@ -44,9 +44,11 @@ const Header = ({ siteTitle, pages, height }) => {
       renderPage(main, label);
     });
 
-    $('.pageLink').animate({ opacity: 0 }, 300, () => {
-        setIsMobileMenuVisible(false);
-    });
+    if (isMobileMenuVisible) {
+      $('.pageLink').animate({ opacity: 0 }, 300, () => {
+          setIsMobileMenuVisible(false);
+      });
+    }
   } 
 
   const renderPages = () => (

@@ -1,5 +1,5 @@
 exports.projects = [
-  {
+  /*{
     color: '#4C2998',
     title: 'Pixel Legion',
     duration: 'Oct 2019 - Present',
@@ -9,7 +9,7 @@ exports.projects = [
     url: '/projects/pixel-legion',
     freelance: true,
     id: 'legion',
-  },
+  },*/
   {
     color: '#2C3E50',
     title: 'College Pulse',
