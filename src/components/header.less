@@ -1,0 +1,79 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 0;
+  z-index: 10;
+}
+
+a[aria-current="page"] {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navMobileBarOptions {
+  display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 804px) {
+  .navBarOptions {
+    display: none;
+  }
+
+  .navMobileBarOptions {
+    display: block;
+  }
+
+  .navMobileButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    div {
+      background-color: #333;
+      height: 3px;
+      width: 30px;
+      border-radius: 5px;
+      margin: 5px 0;
+      transition: all .2s ease;
+    }
+  }
+
+  .expanded {
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    transition: all .2s ease;
+
+    .navMobileButton {
+      #bar1 {
+        position: relative;
+        top: 8px; 
+        transform: rotate(45deg);
+      }
+
+      #bar2 {
+        display: none;
+      }
+
+      #bar3 {
+        transform: rotate(-45deg);
+      }
+    }
+
+    
+    .navMobileContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 90%;
+
+      .pageLink {
+        margin: 10px 0;
+      }
+    }
+  }
+}
