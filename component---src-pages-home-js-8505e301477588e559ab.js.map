@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/home.js"],"names":["Home"],"mappings":"2FAAA,4CAIeA,UADF,kBAAM,kBAAC,UAAD","file":"component---src-pages-home-js-8505e301477588e559ab.js","sourcesContent":["import React from 'react';\nimport HomeContainer from '../page-containers';\n\nconst Home = () => <HomeContainer />\nexport default Home;\n"],"sourceRoot":""}
