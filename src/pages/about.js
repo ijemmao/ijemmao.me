@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const About = () => (
   <Layout>
-    <SEO title="About | Ijemma Onwuzulike" />
+    <SEO title="About" />
     <main>
       <AboutContainer />
     </main>

@@ -5,9 +5,8 @@ import SEO from '../components/seo';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home | Ijemma Onwuzulike" />
+    <SEO title="Home" />
     <Home />
   </Layout>
 )
-
 export default IndexPage

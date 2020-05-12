@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const Projects = () => (
   <Layout>
-    <SEO title="Projects | Ijemma Onwuzulike" />
+    <SEO title="Projects" />
     <main>
       <ProjectsContainer />
     </main>

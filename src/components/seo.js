@@ -27,6 +27,16 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  document.onvisibilitychange = () => {
+    if (document.hidden) {
+      document.title = '🥺👉👈Wait come back!';
+    } else {
+      document.title = `${title} | ${site.siteMetadata.title}`;
+    }
+  };
+
+console.log(title);
+
   return (
     <Helmet
       htmlAttributes={{
