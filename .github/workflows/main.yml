@@ -26,9 +26,11 @@ jobs:
         node-version: 12
 
     # Installs necessary dependencies
-    - name: Installs dependencies 🏋🏾‍♀️
+    - name: Installs Gatsby 🏋🏾‍♀️
       run: npm install -g gatsby-cli
+    - name: Installs dependencies
+      run: npm ci
+
     # Deploys the site
     - name: Deploy site 🎉
-      run: npm ci
       run: npm run deploy
