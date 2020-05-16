@@ -24,12 +24,17 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
+    # Set up account information
+    - name: Setup GitHub Email
+      run: git config --global user.email "ijemmaonwuzulike10@gmail.com"
+    - name: Setup GitHub Account
+      run: git config --global user.name "ijemmao"
 
     # Installs necessary dependencies
     - name: Installs Gatsby 🏋🏾‍♀️
       run: npm install -g gatsby-cli
     - name: Installs dependencies
-      run: npm ci
+      run: npm install
 
     # Deploys the site
     - name: Deploy site 🎉
