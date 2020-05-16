@@ -1,18 +1,17 @@
 .homeContainer {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  height: 90vh;
-  width: 95vw;
-  max-width: 1600;
-  transition: display .3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.homeContent {
+.title {
+  text-align: center;
+}
+.socialLinksContainer {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 100%;
+  justify-content: center;
 }
 
 .socialLink {
@@ -34,6 +33,12 @@
 #github:hover {
   filter: invert(66%) sepia(92%) saturate(3416%) hue-rotate(350deg) brightness(100%) contrast(100%);
 }
+
+.videos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 @media only screen and (min-width: 375px) and (max-width: 1112px) {
   .homeContent {
     flex-direction: column;
@@ -43,10 +48,6 @@
 
     h1 {
       font-size: 5rem;
-    }
-
-    .homeTitleContainer {
-      
     }
 
     .socialLinksContainer {
