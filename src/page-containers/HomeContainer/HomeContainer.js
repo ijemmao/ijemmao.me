@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import { Row } from 'antd';
-import fetchYouTubeVideos from '../../utils/fetchYouTubeVideos';
+import firstTwoVideos from '../../utils/constants/videos.js';
 import YouTube from '../../images/youtube.svg';
 import Twitter from '../../images/twitter.svg';
 import GitHub from '../../images/github.svg';
@@ -15,7 +15,7 @@ const HomeContainer = () => {
   useEffect(() => {
     $('.homeContainer').fadeIn(300);
     $('.homeContainer').css({ display: 'flex' });
-    fetchYouTubeVideos(setYouTubeVideos);
+    setYouTubeVideos(firstTwoVideos);
   }, []);
   return (
     <div className="homeContainer">
