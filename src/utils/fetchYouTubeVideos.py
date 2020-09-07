@@ -19,5 +19,5 @@ firstTwoVideos.append(videos[3])
 
 
 videosFile = open('./src/utils/constants/videos.js', 'w')
-videosFile.write('export default {firstTwoVideos} // hihi'.format(firstTwoVideos=firstTwoVideos))
+videosFile.write('export default {firstTwoVideos}'.format(firstTwoVideos=firstTwoVideos))
 videosFile.close()
