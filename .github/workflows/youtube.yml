@@ -4,12 +4,12 @@ on:
   push:
     branches: [ dev ]
   schedule:
-    # Runs every hour
-    - cron: '0 * * * *'
+    # Runs every Friday on the 18th hour
+    - cron: '0 18 * * 5'
   workflow_dispatch:
 
 jobs:
-  build:
+  fetch-videos:
     runs-on: ubuntu-latest
     strategy:
       matrix:
