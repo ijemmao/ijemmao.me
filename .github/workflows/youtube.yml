@@ -17,6 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
@@ -27,4 +30,14 @@ jobs:
           pip install requests
       - name: Fetch two latest YouTube videos
         run: python ./src/utils/fetchYouTubeVideos.py
-        
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Update YouTube videos"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: dev
+          force: true
+          github_token: ${{ secrets.DEPLOY_PERSONAL_SITE }}
