@@ -1,1 +1,1 @@
-export default ['https://www.youtube.com/embed/AfPqIH7rbx0', 'https://www.youtube.com/embed/AD8m9mphOoo']
+export default ['https://www.youtube.com/embed/7LFLV8VsN9o', 'https://www.youtube.com/embed/AfPqIH7rbx0']
