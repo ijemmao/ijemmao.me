@@ -4,8 +4,7 @@ on:
   push:
     branches: [ dev ]
   schedule:
-    # Runs every Friday on the 18th hour
-    - cron: '0 18 * * 5'
+    - cron: "* * * * *"
 
 jobs:
   fetch-videos:
