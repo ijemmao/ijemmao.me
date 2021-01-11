@@ -10,6 +10,28 @@ exports.projects = [
     freelance: true,
     id: 'legion',
   },*/
+  /*{
+    color: '',
+    title: 'Nkowa okwu | Igbo API',
+    duration: 'Sept 2020 - Present',
+    position: 'Creator | Full Stack Engineer',
+    type: 'web',
+    src: require('../../images/nkowaokwu.png'),
+    url: '/projects/igbo-api',
+    freelance: false,
+    id: 'igbo-api',
+  },*/
+  {
+    color: '#357BCD',
+    title: 'Timetracker',
+    duration: 'Jun 2019 - Jan 2020',
+    position: 'Full Stack Mobile Engineer',
+    type: 'mobile',
+    src: require('../../images/timetracker.png'),
+    url: '/projects/timetracker',
+    freelance: false,
+    id: 'timetracker',
+  },
   {
     color: '#2C3E50',
     title: 'College Pulse',
@@ -20,17 +42,6 @@ exports.projects = [
     url: '/projects/college-pulse',
     freelance: true,
     id: 'pulse',
-  },
-  {
-    color: '#357BCD',
-    title: 'Timetracker',
-    duration: 'Jun 2019 - Present',
-    position: 'Full Stack Mobile Engineer',
-    type: 'mobile',
-    src: require('../../images/timetracker.png'),
-    url: '/projects/timetracker',
-    freelance: false,
-    id: 'timetracker',
   },
   {
     color: '#430303',
