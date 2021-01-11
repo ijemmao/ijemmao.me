@@ -2,7 +2,11 @@ name: Publish Personal Site
 
 on:
   push:
-    branches: [ dev ]
+    branches:
+      - dev
+  schedule:
+    # Runs every Friday at 3:00 PM PST
+    - cron: '0 11 * * 5'
 
 jobs:
   deploy:
