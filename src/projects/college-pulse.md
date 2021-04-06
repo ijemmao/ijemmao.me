@@ -12,12 +12,12 @@ title: "College Pulse"
 
 [Pulse](https://collegepulse.com/) was the first project that 
 I worked with title Full Stack Web Engineer. This was during 
-the time I was a membor of the [DALI Lab](https://dali.dartmouth.edu) 
+the time I was a member of the [DALI Lab](https://dali.dartmouth.edu) 
 at [Dartmouth College](https://dartmouth.edu).
 
 ## Anonymous Surveys
 [Terren Klein](https://www.linkedin.com/in/terrenklein/) was the 
-mind behind the idea of collecting college students' opinions 
+mind behind creating the idea of collecting college students' opinions 
 by creating an anonymous survey/data-collection platforms. At the 
 time, I was a rising junior that wanted to get more hands-on 
 experience in the world of web development. So through the DALI 
