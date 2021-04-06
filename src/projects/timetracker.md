@@ -6,7 +6,7 @@ title: "Timetracker"
 
 # Timetracker
 
-##### Jun 2019 - Present • Personal • Full Stack Mobile Engineer
+##### Jun 2019 - Jan 2020 • Personal • Full Stack Mobile Engineer
 
 ![](../images/timetracker.png)
 
@@ -52,8 +52,7 @@ framework and **MongodDB** as the database language.
 There's really nothing more to it!
 
 ## End Goal
-Timetracker started as a way to pass free time but has turned into a small 
-but mighty personal passion project that aims to give me the space 
-to learn and grow as a software engineer. As time goes on and new ideas 
-come to my mind, I'll slowly expand the functionality and capabilities of 
-the app.
+Timetrack started as a project to pass the time, but turned into a project
+that I really enjoyed working. Due to the time requirements from my job and 
+other personal projects, I don't have any current plans to continue working 
+on Timetracker.
