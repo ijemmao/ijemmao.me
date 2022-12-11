@@ -10,16 +10,16 @@ title: "Hamono"
 
 ![](../images/hamono.png)
 
-One of the great things about being a college students is 
-the long breaks. Dartmouth College was generous by having 
-a six-week long winter break. Instead of letting those six 
-weeks aimlessly pass by, a few friends decided to make a 
+One of the great things about being a college student getting 
+long breaks. Dartmouth College was generous by having 
+a six-week winter break. Instead of letting those six 
+weeks aimlessly pass by, a few friends and I decided to make a 
 desktop game, ultimately called 
 [Hamono](https://hamono.surge.sh).
 
 ## A Click-and-Drag Game
 All of us loved playing video games, and realized that we 
-could work together to make our own. There was five us in 
+could work together to make our own. There were five us in 
 total:
 
 Two designers: [Young Jang](https://www.linkedin.com/in/youngjang19/) 
@@ -30,10 +30,10 @@ and me
 
 One musical composer: [Summer Cody](https://www.linkedin.com/in/summercody/)
 
-Our main focus of this project was to create something that 
+Our main focus for this project was to create something that 
 was exciting but also manageable for a six-week time period. 
 Within our break, we wanted to create a simple story line, a
-variety of enemies, two levels, and one boss level.
+variety of enemies, three levels, including a daunting boss.
 
 ## Design
 The designers wanted to have a pixel art aesthetic, so the 
